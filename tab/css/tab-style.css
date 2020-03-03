@@ -1,0 +1,148 @@
+/*
+Stylesheet for Tab Widget  
+Author: Graffiti
+Author URI: http://bizomart.com/wordpress/graffiti/
+*/
+
+/* Contains the entire tabbed section */
+.widget_graffiti_tabbed_widget {
+	background: #fff;
+	overflow: hidden;
+	padding: 0 !important;
+	width: 100%; /* Need to change for responsive width */
+}
+
+/* List of tabs */
+.widget_graffiti_tabbed_widget ul.sb_tabs {
+	float: left;
+	display: inline;
+	width: 100%;
+	margin: 0 !important;
+	padding: 0;
+	/*border-bottom:1px solid #ff7600;*/
+	background:#959595;
+}
+.widget_graffiti_tabbed_widget ul.sb_tabs li a
+{
+background:#e6e6e6;
+}
+.widget_graffiti_tabbed_widget .tab-content ul {
+	margin: 0 !important;
+}
+.widget_graffiti_tabbed_widget ul.sb_tabs li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding:0;
+	text-align: center;
+	max-height: 42px;
+	overflow: hidden;
+	border-bottom: none;
+}
+.widget_graffiti_tabbed_widget ul.sb_tabs li:last-child {
+	margin-right: none;
+}
+
+@media(max-width:767px)
+{
+.widget_graffiti_tabbed_widget ul.sb_tabs li a {
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 15px 23.3px;
+	line-height: 1;
+	font-size: 12px;
+	font-weight:400;
+	background: #959595;
+	color: #ffffff;
+	border-right:1px solid #fff;
+}
+}
+@media(min-width:768px)
+{
+.widget_graffiti_tabbed_widget ul.sb_tabs li a {
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 15px 11.4px;
+	line-height: 1;
+	font-size: 12px;
+	background: #959595;
+	color: #ffffff;
+	border-right:1px solid #fff;
+}
+}
+@media(min-width:992px)
+{
+.widget_graffiti_tabbed_widget ul.sb_tabs li a {
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 15px 23.3px;
+	line-height: 1;
+	font-size: 13px;
+	font-weight:400;
+	background: #959595;
+	color: #ffffff;
+	border-right:1px solid #fff;
+}
+}
+
+.sb_tabbed ul.sb_tabs li a:hover {
+	cursor: pointer;
+}
+
+/* The current selected tab */
+.widget_graffiti_tabbed_widget ul.sb_tabs li a.tab-current {
+	box-shadow: none;
+}
+
+/* Post Meta */
+.sb-date-meta, .sb-comment-meta, .sb-cat-meta {
+	font-size: 12px;
+	color: #333;
+	font-style: italic;
+}
+
+.sb-date-meta, .sb-comment-meta {
+	display: block;
+}
+
+/* Set the CSS to make sure the other tabs' content isn't shown other than the first */
+.widget_graffiti_tabbed_widget div.t2, .widget_graffiti_tabbed_widget div.t3, .widget_graffiti_tabbed_widget div.t4 {
+	display: none;
+}
+
+/* Content for inside your tabs' divs */
+.widget_graffiti_tabbed_widget .tab-content {
+	padding: 2px 0px;
+	clear: both;
+	/*border:1px solid #E0DFDF;*/
+	border:0px;
+}
+
+.widget_graffiti_tabbed_widget .tab-content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.widget_graffiti_tabbed_widget .tab-content ul li {
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	background: none;
+}
+
+.widget_graffiti_tabbed_widget .tab-content ul li img.alignleft {
+	border: 1px solid #eee;
+	margin-top: 0;
+	padding: 0;
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+}
+
+.widget_graffiti_tabbed_widget .tab-content ul li:last-child {
+	border-bottom: none;
+}
